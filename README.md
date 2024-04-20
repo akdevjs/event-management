@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Event Management Tool
 
-## Getting Started
+An event management tool built with Next.js, TypeScript, PredictHQ API, TailwindCSS, Jotai, Heroicons, and Firebase.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: React framework for building server-side rendered applications.
+- **TypeScript**: Typed superset of JavaScript for type-safe code.
+- **PredictHQ API**: API for accessing event data.
+- **TailwindCSS**: Utility-first CSS framework for styling.
+- **Jotai**: State management library.
+- **Heroicons**: Icon set for UI components.
+- **Firebase**: Backend-as-a-Service (BaaS) for database and authentication.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The UI for the event management tool is complete and all functionalities are working as expected. The tool utilizes the PredictHQ API to fetch event data and display it to users. Users can mark events as favorites, and these favorite event IDs are stored in Firebase for persistence.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Event Listing**: Display a list of events fetched from the PredictHQ API.
+- **Favorite Events**: Allow users to mark events as favorites, with favorite IDs stored in Firebase.
+- **UI Components**: Utilize Heroicons and TailwindCSS for UI components.
+- **State Management**: Manage application state using Jotai.
 
-To learn more about Next.js, take a look at the following resources:
+## Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Check out the live demo of the Event Management Tool [here](https://event-management-nine-peach.vercel.app/).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Issues and Workarounds
 
-## Deploy on Vercel
+- **PredictHQ API Limitations**: There was no way to modify PredictHQ objects or add any favorite key directly through the API. As a workaround, favorite event IDs are stored in Firebase to display favorite events.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Category Filtering**: Implement category filtering for events if a complete list of categories becomes available.
+
+## Setup and Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/event-management-tool.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd event-management-tool
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
