@@ -29,7 +29,10 @@ function UpComingEvents({ events, isLoading }: Props) {
       {isLoading ? (
         <div className="max-h-[42vh] overflow-y-auto md:flex md:flex-col grid grid-cols-2 gap-3">
           {Array.from({ length: 5 }).map((_, index: number) => (
-            <div className="border rounded-2xl py-3 px-4 flex justify-between items-center  animate-pulse  md:flex md:items-center">
+            <div
+              key={index}
+              className="border rounded-2xl py-3 px-4 flex justify-between items-center  animate-pulse  md:flex md:items-center"
+            >
               <div className="flex flex-col items-start justify-center gap-1">
                 <div className="h-6 bg-gray-200 rounded-full md:w-64 w-32"></div>
                 <div className="h-5 bg-gray-200 rounded-full md:w-40 w-20 "></div>
